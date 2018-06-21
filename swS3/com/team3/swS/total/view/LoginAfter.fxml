@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="900.0" maxWidth="1200.0" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team3.swS.total.main.LoginAfterController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="129.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="63.0" prefWidth="1100.0">
+               <children>
+                  <HBox prefHeight="63.0" prefWidth="1081.0">
+                     <children>
+                        <ImageView fx:id="mainLogo" fitHeight="62.0" fitWidth="78.0" onMouseClicked="#btnLogo" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/logo.png" />
+                           </image></ImageView>
+                        <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="664.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="wordBoardBtn" mnemonicParsing="false" onAction="#wordBoardBtn" prefHeight="50.0" prefWidth="70.0" text="단어장">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="chargeBoardBtn" mnemonicParsing="false" onAction="#chargeBoardBtn" prefHeight="50.0" prefWidth="70.0" text="충전">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buyBoardBtn" mnemonicParsing="false" onAction="#buyBoardBtn" prefHeight="50.0" prefWidth="70.0" text="결제">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="memCenterBoardBtn" mnemonicParsing="false" onAction="#memCenterBoardBtn" prefHeight="50.0" prefWidth="80.0" text="고객센터">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="manageBoardBtn" mnemonicParsing="false" onAction="#manageBoardBtn" text="관리" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="mainLogin" prefHeight="63.0" prefWidth="221.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnMypage" mnemonicParsing="false" onAction="#btnMypage" prefHeight="51.0" prefWidth="85.0" text="Mypage" />
+                              <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogout" prefHeight="51.0" prefWidth="85.0" text="Logout" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </HBox>
+                        <VBox prefHeight="100.0" prefWidth="116.0">
+                           <children>
+                              <Button fx:id="mainPBtn" mnemonicParsing="false" onAction="#mainPBtn" text="개인정보처리방침">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="mainUBtn" mnemonicParsing="false" onAction="#mainUBtn" text="이용약관">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="mainCBtn" mnemonicParsing="false" onAction="#mainCBtn" text="회사소개">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="swMainBoard" alignment="CENTER" maxHeight="640.0" maxWidth="1098.0" minHeight="640.0" minWidth="1098.0" prefHeight="640.0" prefWidth="1098.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

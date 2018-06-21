@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap 
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+		"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+		
+<!-- 
+	namespace는 이곳에 설정된 SQL문을 호출해서 사용할 때 같이 사용되는 이름이다.
+	(자바에서의 package와 비슷한 역할을 한다.)
+ -->
+<sqlMap namespace="IdSearch">
+
+	<typeAlias alias="memJoinVo" type="team3.swS.memJoin.vo.MemberJoinVo"/>
+	
+	<select id="getIdSearch" parameterClass="memJoinVo" resultClass="memJoinVo">
+		select * from member where mem_email=#mem_email#
+	</select>
+	
+</sqlMap>

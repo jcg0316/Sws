@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap 
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--  
+	namespace는 이곳에 설정된 SQL문을 호출해서 사용할 때 같이 사용되는 이름이다.
+	(자바에서의 package와 비슷한 역할을 한다.)
+-->
+<sqlMap namespace="prod">
+
+	<typeAlias alias="prod" type="team3.swS.productManage.vo.ProdVO"/>
+
+	<insert id="prodInsert" parameterClass="prod">
+		insert into voucher (voucher_no,voucher_amount, voucher_name, voucher_date, voucher_del,voucher_sysdate)
+		values ('vo' || voucher_no.nextval, #voucher_amount#,#voucher_name#,#voucher_date#,#voucher_del#,to_char(sysdate, 'yyMMdd'))  
+		
+  	</insert>
+    
+  	<update id="prodUpdate" parameterClass="prod"> 
+	  	update voucher set  voucher_amount=#voucher_amount#,voucher_date=#voucher_date#,voucher_del=#voucher_del#
+	  	where voucher_no=#voucher_no# 
+    </update>	
+  	
+    <update id="prodDelete" parameterClass="String">
+  		update voucher set voucher_del='n' where voucher_no=#voucher_no#
+ 	</update>
+ 	
+ 	 
+ 	<select id="getProductAll" resultClass="prod">
+  		select * from voucher
+  	</select>
+	 	 	<!--  
+  	<select id="getMemberCount" parameterClass="String" resultClass="int">
+  		select count(*) from mymember where mem_id = #mem_id#
+  	</select>
+  -->
+</sqlMap>

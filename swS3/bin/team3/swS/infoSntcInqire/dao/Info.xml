@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap 
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--  
+	namespace는 이곳에 설정된 SQL문을 호출해서 사용할 때 같이 사용되는 이름이다.
+	(자바에서의 package와 비슷한 역할을 한다.)
+-->
+<sqlMap namespace="Info">
+<typeAlias alias="infoVo" type="team3.swS.infoSntcInqire.vo.InfoVO"/>
+ 
+	
+
+	<insert id="btnAdd" parameterClass="infoVo">
+		insert into info (info_no ,info_contents)
+		values (#info_no#,#info_contents#)  
+  	</insert>
+  <!-- 
+  	<update id="memUpdate" parameterClass="member"> 
+	  	update mymember set mem_name=#mem_name#, mem_tel=#mem_tel#, mem_addr=#mem_addr#
+	  	where mem_id=#mem_id#  
+    </update>	
+  	
+    <delete id="memDelete" parameterClass="String">
+  		delete from mymember where mem_id = #BaBo#
+ 	</delete>
+ 	 -->
+ 	  
+ 	<select id="getInfoAll" resultClass="infoVo">
+  		select * from Info
+  	</select>
+  	
+	 	 <!--  	
+  	<select id="getMemberCount" parameterClass="String" resultClass="int">
+  		select count(*) from mymember where mem_id = #mem_id#
+  	</select>
+  -->
+</sqlMap>
