@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="com"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/activation.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/javax.mail .jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/mail.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/pdfbox-app-2.0.9.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/smtp.jar"/>
+	<classpathentry kind="lib" path="D:/A_TeachingMaterial/5.MiddleProject/workspace/swS/res/jar/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
